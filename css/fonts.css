@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "AcromThin";
+    url("./fonts/acrom100.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AcromLight";
+url("./fonts/acrom300.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AcromRegular";
+url("./fonts/acrom400.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AcromMedium";/**/
+url("./fonts/acrom600.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AcromBold";/**/
+url("./fonts/acrom800.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AcromExtraBold";
+url("./fonts/acrom900.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+@font-face {
+    font-family: "MuseoSansCyrl100";
+url("./fonts/MuseoSansCyrl_100") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MuseoSansCyrl300";
+url("./fonts/MuseoSansCyrl_300.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MuseoSansCyrl500";
+url("./fonts/MuseoSansCyrl_500.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MuseoSansCyrl700";
+url("./fonts/MuseoSansCyrl_700.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MuseoSansCyrl900";
+url("./fonts/MuseoSansCyrl_900.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}

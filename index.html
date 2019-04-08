@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AC-Step</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/icon-style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lib/jquery-3.3.1.slim.min.js"></script>
+    <script defer src="js/slick.min.js"></script>
+    <script defer src="js/ArrowInputFunctions.js"></script>
+    <script defer src="js/index.js"></script>
+    <link rel="icon" type="png" href="img/favicons.png">
+</head>
+<body>
+<header>
+    <div class="head">
+        <div class="container">
+            <div class="head-layout">
+                <div class="head-left">
+                    <a href="#">магазин</a>
+                </div>
+                <div class="head-center">
+                    <img src="img/ac-step%20logo%20white%20%20full.png" alt="#">
+                </div>
+                <div class="head-right">
+                    <div class="head-right__top">
+                        <div class="head-right__top_language">
+                            <a href="#">ru
+                                <span class="icon-arrow_head"></span>
+                            </a>
+                        </div>
+                        <div class="head-right__top_search">
+                            <span class="icon-Search"></span>
+                            <input id="product" type="text" placeholder="Поиск по товарам">
+                        </div>
+                    </div>
+                    <div class="head-right__bottom">
+                        <div class="head-right__bottom_left">
+                            <div class="head-right__bottom_cabinet"><!--название-->
+                                <a href="#">Мой кабинет</a>
+                            </div>
+                            <div class="head-right__bottom_out"><!--название-->
+                                <a href="#">Выйти</a>
+                            </div>
+                        </div>
+                        <div class="head-right__bottom_right">
+                            <div class="head-right__bottom_chosen"><!--название-->
+                                <div href="#">Избранное&nbsp
+                                    <span class="icon-Heart_head"></span>
+                                </div>
+                            </div>
+                            <div class="head-right__bottom_basket"><!--название-->
+                                <a href="#">Корзина&nbsp
+                                    <span class="icon-basket"></span>
+                                </a>
+                                <span class="basket-count">0</span>
+                            </div>
+                        </div>
+                    </div><!--head-right__bottom-->
+                </div><!--head-right-->
+            </div><!--head-layout-->
+        </div><!--container-->
+    </div><!--head-->
+    <nav>
+        <div class="container"><!--пересмотреть-->
+            <ul class="menu">
+                <li><a>женская</a></li>
+                <li><a>мужская</a></li>
+                <li><a>детская</a></li>
+                <li><a>trendbook</a></li>
+                <li><a>новости</a></li>
+                <li><a>о компании</a></li>
+            </ul>
+        </div><!--container-->
+    </nav>
+</header>
+<mean>
+    <div class="container">
+        <section>
+            <div class="bread-crumbs-box">
+                <a class="bread-crumbs-box__chief" href="#">Главная</a>
+                <span class="icon-arrow_bread-crumbs"></span>
+                <a class="bread-crumbs-box__collection" href="#">Женская коллекция</a>
+                <span class="icon-arrow_bread-crumbs"></span>
+                <a class="bread-crumbs-box__heel" href="#">Каблук</a>
+                <span class="icon-arrow_bread-crumbs"></span>
+                <a class="bread-crumbs-box__type" href="#">КП-11517</a>
+            </div><!--bread-crumbs-box-->
+            <div class="item-box">
+                <div class="item-box__show-choose">
+                    <div class="item-box__show-choose_select">
+                        В избранное
+                        <svg id="heart-icon" xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415" >
+                            <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                      transform="translate(711.375 460.975)"
+                                      fill="none"
+                                      stroke="#95989a"
+                                      stroke-width="2" fill-rule="evenodd"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="item-box__show-choose_slid">
+                        <!--popup-->
+                        <div id="result" class="result" data-src=""></div>
+                        <div class="slid-box">
+                            <div class="slid-box__item">
+                                <img src="img/кп-11517лакWeb.png" data-large-src="img/кп-11517лакWeb.png" alt="#">
+                            </div>
+                            <div class="slid-box__item">
+                                <img src="img/ракурс%202.png" data-large-src="img/ракурс%202@2x.png" alt="#">
+                            </div>
+                            <div class="slid-box__item">
+                                <img src="img/ракурс%203.png" data-large-src="img/ракурс%203@2x.png" alt="#">
+                            </div>
+                            <div class="slid-box__item">
+                                <img src="img/ракурс%204.png" data-large-src="img/ракурс%204@2x.png"  alt="#">
+                            </div>
+                        </div><!--slid-box-->
+                    </div><!--item-box__show-choose_slid-->
+                </div><!--item-box__show-choose-->
+                <div class="item-box__additional-choose">
+                    <div class="item-box__additional-choose_head">выбор набойки</div>
+                    <div class="item-box__additional-choose_size">
+                        <div class="size-view">5 мм</div>
+                        <div class="size-view">8 мм</div>
+                        <div>5 мм <br>под обтяжку</div>
+                        <div>8 мм <br>под обтяжку</div>
+                    </div>
+                    <div class="item-box__additional-choose_color">
+                        <img src="img/additional_color/01%20Черный.png" alt="#">
+                        <img src="img/additional_color/02%20Медов.png" alt="#">
+                        <img src="img/additional_color/03%20Белая.png" alt="#">
+                        <img src="img/additional_color/02%20Медов.png" alt="#">
+                    </div>
+                </div><!--item-box__additional-choose-->
+                <div class="item-box__info">
+                    <div class="item-box__info_section type-info">каблук</div>
+                    <div class="item-box__info_section item-box__info_section-name">кп-11517</div>
+                    <div class="item-box__info_section nomenclature">номенклатура <br>
+                        <span class="nomenclature-info">Каблук (4042) мат silk №2 черн./без наб.</span>
+                    </div>
+                    <div class="item-box__info_section model">модель:
+                        <span>№ 13</span>
+                    </div>
+                    <div class="item-box__info_section size">размеры:&nbsp;
+                        <span class="other-style">&nbsp;р.1(36-37); р.2(38-39); р.3(40-41)</span>
+                    </div>
+                    <div class="item-box__info_section">информация:&nbsp;&nbsp;&nbsp;
+                        <span class="other-style">Каблук в базе идет без набойки.</span>
+                    </div>
+                    <div class="item-box__info_section item-box__info_section-color">выбор цвета: </div>
+                    <div class="item-box__info_section-photo">
+                        <img src="img/heel_color/кп-11517%20лак%20web%20(5).png" alt="#">
+                        <img src="img/heel_color/кп-11517%20лак%20красн%20web%20(3).png" alt="#">
+                        <img src="img/heel_color/кп-11517%20лак%20латте%20web%20(3).png" alt="#">
+                        <img src="img/heel_color/кп-11517%20лак%20син%20web%20(3).png" alt="#">
+                        <img src="img/heel_color/кп-11517%20обтяжка%20глитер%20серебро%20web%20(3).png" alt="#">
+                        <img src="img/heel_color/к-11517%20обтяжка%20глиттер%20золото%20web%20(2).png" alt="#">
+                    </div>
+                    <div class="item-box__info_show-more">показать еще</div>
+                </div><!--item-box__info-->
+            </div><!--item-box-->
+        </section>
+        <section>
+            <div class="additional-function">
+                <a class="additional-function__constructor" href="#">конструктор</a>
+                <button id="order" class="additional-function__order">заказать</button>
+            </div>
+        </section>
+    </div><!--container-->
+
+    <div class="container-order">
+        <div class="checkout">
+            <form action="">
+                <div class="checkout-top">
+                    <div class="checkout-top__head">оформление заказа</div>
+                    <div class="checkout-top__turn">Cвернуть</div>
+                </div><!--checkout-top-->
+                <div class="checkout__box">
+                    <div class="checkout__box_nomenclature">Каблук (4042) мат silk №2 черн./без наб.</div>
+                    <div class="checkout__box_choose">
+                        <div class="checkout__box_chose-size">
+                            <span class="checkout__box_chose-size-name">Размер</span>
+                            <span class="checkout__box_chose-size-item">36-37</span>
+                            <span class="checkout__box_chose-size-item">38-39</span>
+                            <span class="checkout__box_chose-size-item">40-41</span>
+                        </div>
+                        <div class="checkout__box_chose-sum">
+                            <span class="checkout__box_chose-sum-name">Количество</span>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="total">Итого: 50 пар</div>
+                        </div>
+                    </div><!--checkout__box_choose-->
+                </div><!--checkout__box-->
+
+                <div class="checkout__additional-order">
+                    <a class="checkout__additional-order_link" href="#">Заказать дополнительно</a>
+                    <span class="arrow icon-arrow_up"></span>
+                </div>
+
+                <div class="checkout__box other">
+                    <div class="checkout__box_nomenclature other-item">
+                        <div>Набойка на кабл. 4032-4042 (5мм) (5 пар)</div>
+                        <img src="img/01%20Черный.png" alt="#">
+                    </div>
+                    <div class="checkout__box_choose">
+                        <div class="checkout__box_chose-size">
+                            <span class="checkout__box_chose-size-name">Размер</span>
+                            <span class="checkout__box_chose-size-item">36-37</span>
+                            <span class="checkout__box_chose-size-item">38-39</span>
+                            <span class="checkout__box_chose-size-item">40-41</span>
+                        </div>
+                        <div class="checkout__box_chose-sum">
+                            <span class="checkout__box_chose-sum-name">Количество</span>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="total">Итого: 50 пар</div>
+                        </div>
+                    </div><!--checkout__box_choose-->
+                </div><!--checkout__box-->
+                <div class="checkout__box other">
+                    <div class="checkout__box_nomenclature other-item">
+                        <div>Набойка на кабл. 4032-4042 (5мм) (5 пар)</div>
+                        <img src="img/01%20Черный.png" alt="#">
+                    </div>
+                    <div class="checkout__box_choose">
+                        <div class="checkout__box_chose-size">
+                            <span class="checkout__box_chose-size-name">Размер</span>
+                            <span class="checkout__box_chose-size-item">36-37</span>
+                            <span class="checkout__box_chose-size-item">38-39</span>
+                            <span class="checkout__box_chose-size-item">40-41</span>
+                        </div>
+                        <div class="checkout__box_chose-sum">
+                            <span class="checkout__box_chose-sum-name">Количество</span>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="total">Итого: 50 пар</div>
+                        </div>
+                    </div><!--checkout__box_choose-->
+                </div><!--checkout__box-->
+                <div class="checkout__box other">
+                    <div class="checkout__box_nomenclature other-item">
+                        <div>Набойка на кабл. 4032-4042 (5мм) (5 пар)</div>
+                        <img src="img/01%20Черный.png" alt="#">
+                    </div>
+                    <div class="checkout__box_choose">
+                        <div class="checkout__box_chose-size">
+                            <span class="checkout__box_chose-size-name">Размер</span>
+                            <span class="checkout__box_chose-size-item">36-37</span>
+                            <span class="checkout__box_chose-size-item">38-39</span>
+                            <span class="checkout__box_chose-size-item">40-41</span>
+                        </div>
+                        <div class="checkout__box_chose-sum">
+                            <span class="checkout__box_chose-sum-name">Количество</span>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="total">Итого: 50 пар</div>
+                        </div>
+                    </div><!--checkout__box_choose-->
+                </div><!--checkout__box-->
+                <div class="checkout__box other without-border">
+                    <div class="checkout__box_nomenclature other-item">
+                        <div>Набойка на кабл. 4032-4042 (5мм) (5 пар)</div>
+                        <img src="img/01%20Черный.png" alt="#">
+                    </div>
+                    <div class="checkout__box_choose">
+                        <div class="checkout__box_chose-size">
+                            <span class="checkout__box_chose-size-name">Размер</span>
+                            <span class="checkout__box_chose-size-item">36-37</span>
+                            <span class="checkout__box_chose-size-item">38-39</span>
+                            <span class="checkout__box_chose-size-item">40-41</span>
+                        </div>
+                        <div class="checkout__box_chose-sum">
+                            <span class="checkout__box_chose-sum-name">Количество</span>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="input-number">
+                                <div class="arrow icon-arrow_up"></div>
+                                <input type="text" value="0">
+                                <div  class="arrow icon-arrow_down"></div>
+                            </div>
+                            <div class="total">Итого: 50 пар</div>
+                        </div>
+                    </div><!--checkout__box_choose-->
+                </div><!--checkout__box-->
+
+                <div class="additional-function checkout__order">
+                    <button class="additional-function__order checkout__order_basket">добавить в корзину</button>
+                    <button class="additional-function__constructor checkout__order_btn">оформить заказ</button>
+                </div>
+            </form>
+        </div><!--checkout-->
+    </div><!--container-order-->
+
+    <div class="container">
+        <section>
+            <div class="box-block">
+                <a class="box-block__head" href="#">позиционируемые колодки</a>
+                <div class="box-block__group">
+                    <div class="box-block__group_item">
+                        <div class="news__client">Новинка</div>
+                        <div class="favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <img class="item-info__img" src="img/Trueman%20Y%20(1).png" alt="#">
+                            <div class="item-info__name">колодка</div>
+                            <div class="item-info__head">КОЛ. 0010</div>
+                        </div>
+                        <div class="box-block__group_item-view">
+                            <a href="#">быстрый просмотр</a>
+                        </div>
+                    </div><!--box-block__group_item-->
+                    <div class="box-block__group_item">
+                        <div class="news__client">Новинка</div>
+                        <div class="favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <img class="item-info__img" src="img/Trueman%20Y%20(1).png" alt="#">
+                            <div class="item-info__name">колодка</div>
+                            <div class="item-info__head">КОЛ. 0010</div>
+                        </div>
+                        <div class="box-block__group_item-view">
+                            <a href="#">быстрый просмотр</a>
+                        </div>
+                    </div><!--box-block__group_item-->
+                    <div class="box-block__group_item item">
+                        <div class="news__client">Новинка</div>
+                        <div class="favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <img class="item-info__img" src="img/Trueman%20Y%20(1).png" alt="#">
+                            <div class="item-info__name">колодка</div>
+                            <div class="item-info__head">КОЛ. 0010</div>
+                        </div>
+                        <div class="box-block__group_item-view">
+                            <a href="#">быстрый просмотр</a>
+                        </div>
+                    </div><!--box-block__group_item-->
+                    <div class="box-block__group_item item">
+                        <div class="news__client">Новинка</div>
+                        <div class="favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <img class="item-info__img" src="img/Trueman%20Y%20(1).png" alt="#">
+                            <div class="item-info__name">колодка</div>
+                            <div class="item-info__head">КОЛ. 0010</div>
+                        </div>
+                        <div class="box-block__group_item-view">
+                            <a href="#">быстрый просмотр</a>
+                        </div>
+                    </div><!--box-block__group_item-->
+                </div>
+            </div><!--box-block-->
+        </section>
+        <section>
+            <div class="box-block box-block-shoes">
+                <a class="box-block__head box-block__head-shoes" href="#">обувь</a>
+                <div class="box-block__group box-block__group-shoes">
+                    <div class="box-block__group_item box-block__group_item-shoes">
+                        <div class="favorites favorites-shoes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info item-info-shoes">
+                            <img src="img/с170%20(1).png" alt="#">
+                        </div>
+                        <div class="box-block__group_item-text">
+                            <div class="item-info__name-shoes item-info__text"><span>Колодка:&nbsp;</span> C-110 B</div>
+                            <div class="item-info__text"><span>Подошва:</span> PU C-170</div>
+                        </div>
+                        <div class="box-block__group_item-view box-block__group_item-view-shoes">
+                            <a href="#">быстрый просмотр</a>
+                        </div>
+                    </div><!--box-block__group_item-->
+                    <div class="box-block__group_item box-block__group_item-shoes">
+                        <div class="favorites favorites-other">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info item-info-shoes-other">
+                            <img class="item-info__img item-info__img-shoes" src="img/IMG_2783.png" alt="#">
+                            <div class="item-info-shoes-other-text">
+                                <div class="item-info__name-shoes item-info__text"><span>Колодка:&nbsp;</span> C-110 B</div>
+                                <div class="item-info__text"><span>Подошва:</span> PU C-170</div>
+                            </div>
+                        </div>
+                        <div class="box-block__group_item-view box-block__group_item-view-other">
+                            <a href="#">быстрый просмотр</a>
+                        </div>
+                    </div><!--box-block__group_item-->
+                    <div class="box-block__group_item box-block__group_item-shoes">
+                        <div class="favorites favorites-shoes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info item-info-shoes">
+                            <img src="img/с170%20(1).png" alt="#">
+                        </div>
+                        <div class="box-block__group_item-text">
+                            <div class="item-info__name-shoes item-info__text"><span>Колодка:&nbsp;</span> C-110 B</div>
+                            <div class="item-info__text"><span>Подошва:</span> PU C-170</div>
+                        </div>
+                        <div class="box-block__group_item-view box-block__group_item-view-shoes">
+                            <a href="#">быстрый просмотр</a>
+                        </div>
+                    </div><!--box-block__group_item-->
+                    <div class="box-block__group_item box-block__group_item-shoes">
+                        <div class="favorites favorites-shoes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info item-info-shoes">
+                            <img src="img/с170%20(1).png" alt="#">
+                        </div>
+                        <div class="box-block__group_item-text">
+                            <div class="item-info__name-shoes item-info__text"><span>Колодка:&nbsp;</span> C-110 B</div>
+                            <div class="item-info__text"><span>Подошва:</span> PU C-170</div>
+                        </div>
+                        <div class="box-block__group_item-view box-block__group_item-view-shoes">
+                            <a href="#">быстрый просмотр</a>
+                        </div>
+                    </div><!--box-block__group_item-->
+                </div>
+                <div class="box-block-shoes__btn">
+                    <a href="#">смотреть все</a>
+                </div>
+            </div><!--box-block-->
+        </section>
+
+
+        <section>
+            <div class="box-slider">
+                <div class="box-slider__head">trendbook</div>
+                <div class="box-slider__favorites">В избранное
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                        <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                            <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                  transform="translate(711.375 460.975)"
+                                  fill="none"
+                                  stroke="#95989a"
+                                  stroke-width="2" fill-rule="evenodd"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="box-slider__group">
+                    <div class="slider__item">
+                        <img src="img/slider/17_С-169-1.jpg" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/17_С-169-2.jpg" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/17_С-169-3.jpg" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/17_С-169-4.jpg" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/17_С-169-5.jpg" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/17_С-169-6.jpg" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/17_С-169-7.jpg" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/17_С-169-8.jpg" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/17_С-169-9.jpg" alt="#">
+                    </div>
+                </div><!--box-slider__group-->
+                <div class="box-slider__btn">
+                    <a href="#">в трендбук</a>
+                </div>
+            </div><!--box-slider-->
+        </section>
+
+        <section>
+            <div class="box-gallery">
+                <a class="box-block__head box-gallery__head" href="#">галерея</a>
+                <div class="box-block__group box-gallery__group">
+                    <div class="box-block__group_item-gallery">
+                        <div class="favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <img src="img/gallery/90.png" alt="#">
+                        </div>
+                    </div><!--box-block__group_item-->
+                    <div class="box-block__group_item-gallery">
+                        <div class="favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <img src="img/gallery/104.png" alt="#">
+                        </div>
+                    </div><!--box-block__group_item-->
+                    <div class="box-block__group_item-gallery item">
+                        <div class="favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <img src="img/gallery/110.png" alt="#">
+                        </div>
+                    </div><!--box-block__group_item-->
+                    <div class="box-block__group_item-gallery item">
+                        <div class="favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.265" height="19.415" viewBox="0 0 21.265 19.415">
+                                <g data-name="Symbol 93 – 11" transform="translate(-710.4 -460)">
+                                    <path d="M17.75,1.565a5.176,5.176,0,0,0-7.368,0l-.725.725-.725-.725A5.21,5.21,0,0,0,1.565,8.933l8.093,8.093L17.75,8.933a5.176,5.176,0,0,0,0-7.368"
+                                          transform="translate(711.375 460.975)"
+                                          fill="none"
+                                          stroke="#95989a"
+                                          stroke-width="2" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="item-info">
+                            <img src="img/gallery/101.png" alt="#">
+                        </div>
+                    </div><!--box-block__group_item-->
+                </div>
+                <div class="box-block-shoes__btn box-gallery__btn">
+                    <a href="#">смотреть все</a>
+                </div>
+            </div><!--box-block-->
+        </section>
+    </div><!--container-->
+
+</mean>
+
+<footer>
+    <div class="container">
+        <div class="footer-block">
+            <div class="footer-block__nav">
+                <div class="footer-block__nav_item">
+                    <a class="footer-block__nav_item-head" href="#">женская</a>
+                    <a class="footer-block__nav_item-point" href="#">колодка</a>
+                    <a class="footer-block__nav_item-point" href="#">подошва</a>
+                    <a class="footer-block__nav_item-point" href="#">каблук</a>
+                    <a class="footer-block__nav_item-point" href="#">кожволон/ стирол</a>
+                    <a class="footer-block__nav_item-point" href="#">стелька</a>
+                    <a class="footer-block__nav_item-point" href="#">конструктор</a>
+                </div>
+                <div class="footer-block__nav_item">
+                    <a class="footer-block__nav_item-head" href="#">мужская</a>
+                    <a class="footer-block__nav_item-point" href="#">колодка</a>
+                    <a class="footer-block__nav_item-point" href="#">подошва</a>
+                    <a class="footer-block__nav_item-point" href="#">стелька</a>
+                    <a class="footer-block__nav_item-point" href="#">конструктор</a>
+                </div>
+                <div class="footer-block__nav_item">
+                    <a class="footer-block__nav_item-head" href="#">детская</a>
+                    <a class="footer-block__nav_item-point" href="#">колодка</a>
+                    <a class="footer-block__nav_item-point" href="#">подошва</a>
+                    <a class="footer-block__nav_item-point" href="#">стелька</a>
+                    <a class="footer-block__nav_item-point" href="#">конструктор</a>
+                </div>
+                <div class="footer-block__nav_item">
+                    <a class="footer-block__nav_item-head" href="#">о нас</a>
+                    <a class="footer-block__nav_item-point upper" href="#">карьера</a>
+                    <a class="footer-block__nav_item-point upper" href="#">style step</a>
+                    <a class="footer-block__nav_item-point upper" href="#">новости</a>
+                    <a class="footer-block__nav_item-point upper" href="#">тренды</a>
+                </div>
+            </div><!--footer-block__nav-->
+            <div class="footer-block__contact">
+                <div class="footer-block__contact_item">
+                    <div class="footer-block__contact_item-head">контакты</div>
+                    <div class="footer-block__contact_item-cont address">Украина, г. Одесса, ул. Дальницкая 45</div>
+                    <div class="footer-block__contact_item-cont tel">+380 (48) 729–68–90</div>
+                    <div class="footer-block__contact_item-cont mail">notify@ac-step. com</div>
+
+                    <div class="footer-block__contact_item-social">
+                        <span class="icon-fb"></span>
+                        <span class="icon-in"></span>
+                        <span class="icon-instagram"></span>
+                        <span class="icon-youtube"></span>
+                    </div>
+                </div>
+                <div class="footer-block__contact_item">
+                    <div class="footer-block__contact_item-head head-subscribe">подписаться на новости</div>
+                    <div class="footer-block__contact_item-input">
+                        <input id="mail" type="text" placeholder="Ваш e-mail">
+                    </div>
+                    <button class="footer-block__contact_item-btn">подписаться</button>
+                </div>
+            </div>
+        </div>
+    </div><!--container-->
+</footer>
+<aside>
+    <div class="container">
+        <p>Все совпадения изображений, моделей обуви с продукцией зарегистрированных торговых марок, являются случайными и не являются рекламой в понимании Закона Украины "О рекламе", статьи 33 Хозяйственного кодекса Украины и Закона Украины "О защите от недобросовестной конкуренции", использованы без цели смешения с деятельностью других субъектов хозяйствования и являются достоверными для клиентов исключительно в целях информирования и ознакомления с продукцией.</p>
+    </div><!--container-->
+</aside>
+</body>
+<div class="popup" id="popup">
+    <img src="" alt="#">
+    <div class="popup__close"></div>
+</div>
+<div class="overlay"></div>
+</html>
